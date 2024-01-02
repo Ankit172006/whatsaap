@@ -94,7 +94,7 @@ body
     display: flex;
     align-items: center;
     background-color: #111b21;
-    transition: all .3s;
+    transition: all .9s;
 }
 .chatpro
 {
@@ -110,6 +110,9 @@ body
 .massage_container
 {
     width: 80%;
+    height: 36px;
+    padding: 19px;
+    border-bottom: 0.5px solid #343333;
 }
 .uppertext
 {
@@ -206,13 +209,14 @@ body
 .chat_mass input
 {
     width: 850px;
-    height: 40px;
+    height: 30px;
     border-radius: 5px;
     outline: none;
     border: none;
     font-size: 20px;
     margin-left: 5px;
     background-color: #2a3942;
+    padding: 7px;
 }
 .chat_mic
 {
@@ -222,7 +226,7 @@ body
     margin-right: 10px;
 }
 .chat_mass{
-    padding: 11px;
+    padding: 9px;
 }
 ::placeholder
 {
@@ -232,4 +236,34 @@ body
 .chat_input svg:hover
 {
     cursor: pointer;
+}
+
+@media only screen and (max-width:412px)
+{
+    .rightcontaner
+    {
+        display: none;
+        width: 99.6%;
+    }
+    .leftcontaner
+    {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .maincontainer
+    {
+        padding: 10px;
+    }
+    .proimg
+    {
+        margin-left: 10px;
+    }
+    .chat_mass input{
+        width: 90%;
+    }
+    .firsticon
+    {
+        margin-left: 4px;
+    }
 }
